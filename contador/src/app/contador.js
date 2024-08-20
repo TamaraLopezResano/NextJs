@@ -21,7 +21,7 @@ export default function Contador() {
   
   const handleUpdateName = () => {
     const nameInput = document.getElementById('name-input').value;
-    setName(nameInput || 'Falta ingresar un nombre');
+    setName(nameInput || ' Falta ingresar un nombre');
   };
   const handleCheckboxChange = (checked) => {
     setSuma(checked);
@@ -36,21 +36,21 @@ export default function Contador() {
     <div>
       <h1>Home</h1>
       <div>
-        Contador: <span>{count}</span>
+      <h2>Contador: {count}</h2>
       </div>
       <button id="btn_contador" onClick={handleIncrement}>Incrementar</button>
 
       <div>
-        <p>Mi nombre es:{name || ' Falta ingresar un nombre'}</p>
+        <h2>Mi nombre es:{name || ' Falta ingresar un nombre'}</h2>
         <input type="text" id="name-input" placeholder="Ingrese su nombre" />
         <button onClick={handleUpdateName}>Modificar Nombre</button>
       </div>
+      
 
       <div>
       <label id="label-checkbox">{accion}</label>
       <Checkbox
         label=""
-        checked={suma}
         onChange={handleCheckboxChange}
       />
       </div>

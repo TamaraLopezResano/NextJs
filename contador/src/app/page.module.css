@@ -30,12 +30,18 @@
 .description p {
   position: relative;
   margin: 0;
-  padding: 1rem;
   background-color: rgba(var(--callout-rgb), 0.5);
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
   border-radius: var(--border-radius);
 }
-
+.description button{
+  position: relative;
+  margin: 0;
+  padding: 2px;
+  background-color: rgba(var(--callout-rgb), 0.8);
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  border-radius: 3px;
+}
 .code {
   font-weight: 700;
   font-family: var(--font-mono);
