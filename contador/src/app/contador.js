@@ -41,7 +41,7 @@ export default function Contador() {
       <button id="btn_contador" onClick={handleIncrement}>Incrementar</button>
 
       <div>
-        <p>Mi nombre es: <span>{name || 'Falta ingresar un nombre'}</span></p>
+        <p>Mi nombre es:{name || ' Falta ingresar un nombre'}</p>
         <input type="text" id="name-input" placeholder="Ingrese su nombre" />
         <button onClick={handleUpdateName}>Modificar Nombre</button>
       </div>
